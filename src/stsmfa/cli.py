@@ -63,4 +63,4 @@ def run(
     with creds_path.open("w") as cf:
         config.write(cf)
 
-    print(f"[green]All written to {mfa_profile} profile in ~/.aws/credentials[/green]")
+    print(f"[green]All written to {mfa_profile} profile in {creds_path}[/green]")

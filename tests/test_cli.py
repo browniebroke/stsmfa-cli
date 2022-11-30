@@ -18,7 +18,7 @@ class TestRun:
         with pytest.raises(Exit):
             run("dummy", "123456", "")
         rich_print.assert_called_once_with(
-            f"[red]Credentials file not found at {HOME_PATH}/.aws/credentials[/red]"
+            f"[red]Credentials file not found at {CREDS_PATH}[/red]"
         )
 
     def test_profile_missing(self, fs, rich_print):
@@ -26,8 +26,7 @@ class TestRun:
         with pytest.raises(Exit):
             run("dummy", "123456", "")
         rich_print.assert_called_once_with(
-            "[red]Profile dummy not found in credentials file "
-            f"{HOME_PATH}/.aws/credentials[/red]"
+            "[red]Profile dummy not found in credentials file " f"{CREDS_PATH}[/red]"
         )
 
     def test_mfa_device_missing(self, fs, rich_print):
@@ -74,7 +73,7 @@ class TestRun:
         run("dummy", "123456", "")
 
         rich_print.assert_called_once_with(
-            "[green]All written to dummy-mfa profile in ~/.aws/credentials[/green]"
+            f"[green]All written to dummy-mfa profile in {CREDS_PATH}[/green]"
         )
         assert Path(CREDS_PATH).read_text() == (
             "[dummy]\n"
