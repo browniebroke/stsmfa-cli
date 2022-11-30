@@ -49,7 +49,7 @@ pythonpath = ["src"]
 [tool.coverage.run]
 branch = true
 omit = [
-    "stsmfs/__main__.py",
+    "*/__main__.py",
 ]
 
 [tool.coverage.report]
