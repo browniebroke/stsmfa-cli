@@ -1,0 +1,21 @@
+# Changes here will be overwritten by Copier
+_commit: a7697b5
+_src_path: gh:browniebroke/pypackage-template
+add_me_as_contributor: true
+copyright_year: '2022'
+documentation: false
+email: alla.brunoo@gmail.com
+full_name: Bruno Alla
+github_username: browniebroke
+initial_commit: true
+open_source_license: MIT
+package_name: stsmfa
+project_name: STS MFA CLI
+project_short_description: A small CLI to help with creating AWS profile for MFA protected
+    sessions
+project_slug: stsmfa-cli
+run_poetry_install: true
+setup_github: true
+setup_pre_commit: true
+version: 0.0.1
+
