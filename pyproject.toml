@@ -21,12 +21,20 @@ packages = [
 "Bug Tracker" = "https://github.com/browniebroke/stsmfa-cli/issues"
 "Changelog" = "https://github.com/browniebroke/stsmfa-cli/blob/main/CHANGELOG.md"
 
+[tool.poetry.scripts]
+stsmfa = "stsmfa.cli:app"
+
 [tool.poetry.dependencies]
 python = "^3.7"
+boto3 = "^1.26.20"
+typer = "^0.7.0"
+rich = "^12.6.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
 pytest-cov = "^3.0"
+pyfakefs = "^5.0.0"
+pytest-mock = "^3.10.0"
 
 [tool.semantic_release]
 branch = "main"
