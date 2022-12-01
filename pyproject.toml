@@ -32,7 +32,7 @@ rich = "^12.6.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
-pytest-cov = "^3.0"
+pytest-cov = "^4.0"
 pyfakefs = "^5.0.0"
 pytest-mock = "^3.10.0"
 
