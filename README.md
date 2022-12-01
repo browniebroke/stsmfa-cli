@@ -27,13 +27,25 @@
   <img src="https://img.shields.io/pypi/l/stsmfa-cli.svg?style=flat-square" alt="License">
 </p>
 
-A small CLI to help with creating AWS profile for MFA protected sessions
+Creating temporary profiles for MFA protected accounts using AWS STS is too hard. This is a small CLI that helps with that.
 
 ## Installation
 
 Install this via pip (or your favourite package manager):
 
 `pip install stsmfa-cli`
+
+## Usage
+
+The CLI is a single command `stsmfa` that can be used to create temporary profiles for MFA protected accounts.
+
+```bash
+stsmfa my-profile-name 123456
+```
+
+This will create a session using the MFA serial defined under `my-profile-name` with the TOTP `123456`, and save the required AWS key, secret and token under as a new profile `my-profile-name-mfa` in you `~/.aws/credentials` file.
+
+Now to use it, you just need to set `AWS_PROFILE=my-profile-name-mfa`.
 
 ## Contributors ✨
 
