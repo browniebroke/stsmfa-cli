@@ -40,12 +40,14 @@ Install this via pip (or your favourite package manager):
 The CLI is a single command `stsmfa` that can be used to create temporary profiles for MFA protected accounts.
 
 ```bash
-stsmfa my-profile-name 123456
+stsmfa --profile my-profile-name 123456
 ```
 
-This will create a session using the MFA serial defined under `my-profile-name` with the TOTP `123456`, and save the required AWS key, secret and token under as a new profile `my-profile-name-mfa` in you `~/.aws/credentials` file.
+This will create a session using the MFA serial defined under `my-profile-name` with the one-time password `123456`, and save the required AWS key, secret and token under as a new profile `my-profile-name-mfa` in you `~/.aws/credentials` file.
 
-Now to use it, you just need to set `AWS_PROFILE=my-profile-name-mfa`.
+Now to use that session, you just need to set `AWS_PROFILE=my-profile-name-mfa`.
+
+If your MFA serial is defined under the default profile, you don't need to specify the `--profile` option.
 
 ## Contributors ✨
 

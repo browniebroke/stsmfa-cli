@@ -16,7 +16,7 @@ class TestRun:
 
     def test_no_file(self, fs, rich_print):
         with pytest.raises(Exit):
-            run("dummy", "123456", "")
+            run(token="123456", profile="dummy", mfa_profile="")
         rich_print.assert_called_once_with(
             f"[red]Credentials file not found at {CREDS_PATH}[/red]"
         )
@@ -24,7 +24,7 @@ class TestRun:
     def test_profile_missing(self, fs, rich_print):
         fs.create_file(CREDS_PATH)
         with pytest.raises(Exit):
-            run("dummy", "123456", "")
+            run(token="123456", profile="dummy", mfa_profile="")
         rich_print.assert_called_once_with(
             "[red]Profile dummy not found in credentials file " f"{CREDS_PATH}[/red]"
         )
@@ -32,7 +32,7 @@ class TestRun:
     def test_mfa_device_missing(self, fs, rich_print):
         fs.create_file(CREDS_PATH, contents="[dummy]\n")
         with pytest.raises(Exit):
-            run("dummy", "123456", "")
+            run(token="123456", profile="dummy", mfa_profile="")
         rich_print.assert_called_once_with(
             "[red]Profile dummy does not have an mfa_serial configured[/red]"
         )
@@ -48,7 +48,7 @@ class TestRun:
         sts.get_session_token.side_effect = Exception("SOME ERROR")
 
         with pytest.raises(Exit):
-            run("dummy", "123456", "")
+            run(token="123456", profile="dummy", mfa_profile="")
 
         rich_print.assert_called_once_with(
             "[red]Error getting session token: SOME ERROR[/red]"
@@ -70,7 +70,7 @@ class TestRun:
             }
         }
 
-        run("dummy", "123456", "")
+        run(token="123456", profile="dummy", mfa_profile="")
 
         rich_print.assert_called_once_with(
             f"[green]All written to dummy-mfa profile in {CREDS_PATH}[/green]"
