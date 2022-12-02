@@ -31,9 +31,17 @@ Creating temporary profiles for multi-factor auth (MFA) protected accounts using
 
 ## Installation
 
-Install this via pip (or your favourite package manager):
+Via Homebrew:
 
-`pip install stsmfa-cli`
+```bash
+brew install browniebroke/tap/stsmfa-cli
+```
+
+Via pip, pipx, or your favourite Python package manager:
+
+```bash
+pip install stsmfa-cli
+```
 
 ## Usage
 
