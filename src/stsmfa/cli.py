@@ -12,13 +12,13 @@ app = typer.Typer()
 
 @app.command()
 def run(
-    profile: str = typer.Argument(
-        ...,
-        help="The profile to use for obtaining the session token.",
-    ),
     token: str = typer.Argument(
         ...,
         help="The 2FA token.",
+    ),
+    profile: str = typer.Option(
+        "default",
+        help="The profile to use for obtaining the session token.",
     ),
     mfa_profile: str = typer.Option(
         "",
