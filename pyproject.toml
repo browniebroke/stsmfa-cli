@@ -28,7 +28,7 @@ stsmfa = "stsmfa.cli:app"
 python = "^3.7"
 boto3 = "^1.26.20"
 typer = "^0.7.0"
-rich = "^12.6.0"
+rich = "^13.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
