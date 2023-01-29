@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/browniebroke/stsmfa-cli/actions?query=workflow%3ACI">
-    <img src="https://img.shields.io/github/workflow/status/browniebroke/stsmfa-cli/CI/main?label=CI&logo=github&style=flat-square" alt="CI Status" >
+    <img src="https://img.shields.io/github/actions/workflow/status/browniebroke/stsmfa-cli/ci.yml?branch=main&label=CI&logo=github&style=flat-square" alt="CI Status" >
   </a>
   <a href="https://codecov.io/gh/browniebroke/stsmfa-cli">
     <img src="https://img.shields.io/codecov/c/github/browniebroke/stsmfa-cli.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
