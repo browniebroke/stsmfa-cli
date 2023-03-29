@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.10 (2023-03-29)
+### Fix
+* **deps:** Update dependency boto3 to v1.26.101 ([`18c3929`](https://github.com/browniebroke/stsmfa-cli/commit/18c3929df98863a6accd4295384c8ebec09d86ca))
+
 ## v0.1.9 (2023-03-27)
 ### Fix
 * **deps:** Update dependency boto3 to v1.26.100 ([`0198b83`](https://github.com/browniebroke/stsmfa-cli/commit/0198b83d0e9e6fb60156ff9474c687528fc48c50))
