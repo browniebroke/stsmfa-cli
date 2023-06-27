@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-06-27)
+
+### Feature
+
+* Drop support for Python 3.7 ([`db65f47`](https://github.com/browniebroke/stsmfa-cli/commit/db65f47e9ca8517a6ae1e2fe082f08ab085d9762))
+
+### Breaking
+
+* Drop support for Python 3.7 as it reached EOL on June 27, 2023. More infos:https://devguide.python.org/versions/ ([`db65f47`](https://github.com/browniebroke/stsmfa-cli/commit/db65f47e9ca8517a6ae1e2fe082f08ab085d9762))
+
 ## v0.1.14 (2023-04-06)
 ### Fix
 * **deps:** Update dependency boto3 to v1.26.107 ([`cb30cb6`](https://github.com/browniebroke/stsmfa-cli/commit/cb30cb61651478883a9a50cc4b4db5235c8e6a83))
