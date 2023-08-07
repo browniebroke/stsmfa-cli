@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.0 (2023-08-07)
+
+### Feature
+
+- Add official support for python 3.12 (#217) ([`29bd64c`](https://github.com/browniebroke/stsmfa-cli/commit/29bd64c3626266acb4535f2c5b5108181e606433))
+
 ## v1.0.0 (2023-06-27)
 
 ### Breaking
