@@ -48,9 +48,9 @@ def run(
     sts = session.client("sts")
     try:
         response = sts.get_session_token(SerialNumber=mfa_serial, TokenCode=token)
-    except Exception as e:
-        print(f"[red]Error getting session token: {e}[/red]")
-        raise typer.Exit()
+    except Exception as exc:
+        print(f"[red]Error getting session token: {exc}[/red]")
+        raise typer.Exit() from exc
     credentials = response["Credentials"]
 
     # write credentials to file
