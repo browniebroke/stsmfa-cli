@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.2 (2023-09-30)
+
+### Fix
+
+- Update dependency rich to v13.6.0 ([`7ade5be`](https://github.com/browniebroke/stsmfa-cli/commit/7ade5bee8e2af78f72a76bda92a139134ec51560))
+
 ## v1.1.1 (2023-09-17)
 
 ### Fix
