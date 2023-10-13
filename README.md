@@ -27,6 +27,12 @@
   <img src="https://img.shields.io/pypi/l/stsmfa-cli.svg?style=flat-square" alt="License">
 </p>
 
+---
+
+**Source Code**: <a href="https://github.com/browniebroke/stsmfa-cli" target="_blank">https://github.com/browniebroke/stsmfa-cli </a>
+
+---
+
 Creating temporary profiles for multi-factor auth (MFA) protected accounts using AWS STS is too hard. This is a small CLI that helps with that.
 
 ## Installation
