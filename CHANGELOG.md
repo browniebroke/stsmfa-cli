@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3.0 (2024-08-07)
+
+### Feature
+
+- Attest build provenance (#692) ([`680b6ea`](https://github.com/browniebroke/stsmfa-cli/commit/680b6eaf122f5b3e6f1790d8b02b4ccfc05634a4))
+
 ## v1.2.0 (2024-08-07)
 
 ### Feature
