@@ -68,6 +68,7 @@ jobs:
     permissions:
       id-token: write
       contents: write
+      attestations: write
 
     steps:
       - uses: actions/checkout@v4
@@ -89,6 +90,12 @@ jobs:
         if: github.ref_name == 'main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Attest build build provenance
+        uses: actions/attest-build-provenance@v1
+        if: steps.release.outputs.released == 'true'
+        with:
+          subject-path: "dist/stsmfa_cli*"
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
