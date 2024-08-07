@@ -24,6 +24,7 @@ packages = [
 
 [tool.poetry.scripts]
 stsmfa = "stsmfa.cli:app"
+awsmfa = "stsmfa.cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.8"
