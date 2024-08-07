@@ -94,7 +94,7 @@ jobs:
       - name: Attest build build provenance
         uses: actions/attest-build-provenance@v1
         with:
-          subject-path: 'dist/stsmfa_cli*'
+          subject-path: "dist/stsmfa_cli*"
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
