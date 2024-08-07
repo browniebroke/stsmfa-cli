@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.0 (2024-08-07)
+
+### Feature
+
+- Expose the command line tool as awsmfa ([`dccbff7`](https://github.com/browniebroke/stsmfa-cli/commit/dccbff7cd9e974b2278cd42dde7086dca9eadd4c))
+
 ## v1.1.10 (2024-04-09)
 
 ### Fix
