@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3.2 (2024-08-25)
+
+### Fix
+
+- Update dependency typer to v0.12.5 ([`bcafd4f`](https://github.com/browniebroke/stsmfa-cli/commit/bcafd4fc9a6bac92e52cd58f3c25b94490a53489))
+
 ## v1.3.1 (2024-08-17)
 
 ### Fix
