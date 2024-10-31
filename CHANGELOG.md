@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.0 (2024-10-31)
+
+### Features
+
+- Drop support for python 3.8 (#808) ([`c52f7e1`](https://github.com/browniebroke/stsmfa-cli/commit/c52f7e1ee6070f35a12416ed2f795a1c80fae6f2))
+
 ## v1.3.7 (2024-10-22)
 
 ### Bug fixes
