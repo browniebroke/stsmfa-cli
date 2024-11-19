@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.3 (2024-11-19)
+
+### Bug fixes
+
+- Update dependency typer to v0.13.1 (#839) ([`058705d`](https://github.com/browniebroke/stsmfa-cli/commit/058705d4b2a226b19ae07e1b3ca4434c55894586))
+
 ## v1.4.2 (2024-11-08)
 
 ### Bug fixes
@@ -140,7 +146,7 @@
 
 ## v1.0.0 (2023-06-27)
 
-### Breaking
+### Features
 
 - Drop support for python 3.7 ([`db65f47`](https://github.com/browniebroke/stsmfa-cli/commit/db65f47e9ca8517a6ae1e2fe082f08ab085d9762))
 
