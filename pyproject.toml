@@ -33,7 +33,7 @@ awsmfa = "stsmfa.cli:app"
 [tool.poetry.dependencies]
 python = "^3.9"
 boto3 = "^1.26"
-typer = "^0.14.0"
+typer = "^0.15.0"
 rich = ">=10.0"
 
 [tool.poetry.group.dev.dependencies]
