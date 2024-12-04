@@ -4,7 +4,7 @@ requires = [ "poetry-core>=1" ]
 
 [tool.poetry]
 name = "stsmfa-cli"
-version = "1.4.5"
+version = "1.4.6"
 description = "A small CLI to help with creating AWS profile for MFA protected sessions"
 authors = [ "Bruno Alla <alla.brunoo@gmail.com>" ]
 license = "MIT"
