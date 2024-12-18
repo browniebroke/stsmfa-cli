@@ -102,11 +102,6 @@ dev = [
     "pytest-mock<4.0.0,>=3.10.0",
 ]
 
-[tool.pdm.build]
-includes = [
-    "src/stsmfa",
-]
-
 [project]
 authors = [
     {name = "Bruno Alla", email = "alla.brunoo@gmail.com"},
