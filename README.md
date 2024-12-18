@@ -9,8 +9,8 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://python-poetry.org/">
-    <img src="https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json" alt="Poetry">
+  <a href="https://github.com/astral-sh/uv">
+    <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json" alt="uv">
   </a>
   <a href="https://github.com/astral-sh/ruff">
     <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Ruff">
@@ -43,10 +43,10 @@ Via Homebrew:
 brew install browniebroke/tap/stsmfa-cli
 ```
 
-Via pip, pipx, or your favourite Python package manager:
+Via uv, or your favourite Python package manager:
 
 ```bash
-pip install stsmfa-cli
+uv tool install stsmfa-cli
 ```
 
 ## Usage
@@ -65,7 +65,7 @@ mfa_serial = arn:aws:iam::123456789010:mfa/first.last
 When running, for example:
 
 ```bash
-stsmfa --profile my-profile-name 123456
+awsmfa --profile my-profile-name 123456
 ```
 
 This will create a session using the MFA serial defined under `my-profile-name` with the one-time password `123456`, and save the required AWS key, secret and token under as a new profile `my-profile-name-mfa` in you `~/.aws/credentials` file.
