@@ -65,7 +65,7 @@ mfa_serial = arn:aws:iam::123456789010:mfa/first.last
 When running, for example:
 
 ```bash
-stsmfa --profile my-profile-name 123456
+awsmfa --profile my-profile-name 123456
 ```
 
 This will create a session using the MFA serial defined under `my-profile-name` with the one-time password `123456`, and save the required AWS key, secret and token under as a new profile `my-profile-name-mfa` in you `~/.aws/credentials` file.
