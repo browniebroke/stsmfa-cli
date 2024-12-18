@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.5.0 (2024-12-18)
+
+### Features
+
+- Migrate packaging to uv (#880) ([`906a9e3`](https://github.com/browniebroke/stsmfa-cli/commit/906a9e3e870da1791025c09cf501a4665b13177f))
+
 ## v1.4.6 (2024-12-04)
 
 ### Bug fixes
