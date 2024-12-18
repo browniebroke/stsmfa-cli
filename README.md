@@ -43,10 +43,10 @@ Via Homebrew:
 brew install browniebroke/tap/stsmfa-cli
 ```
 
-Via pip, pipx, or your favourite Python package manager:
+Via uv, or your favourite Python package manager:
 
 ```bash
-pip install stsmfa-cli
+uv tool install stsmfa-cli
 ```
 
 ## Usage
