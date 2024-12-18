@@ -1,6 +1,6 @@
 [build-system]
-build-backend = "poetry.core.masonry.api"
-requires = [ "poetry-core>=1" ]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
 [tool.poetry]
 name = "stsmfa-cli"
@@ -137,3 +137,49 @@ match = "main"
 [tool.semantic_release.branches.noop]
 match = "(?!main$)"
 prerelease = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest<9.0.0,>=8.0.0",
+    "pytest-cov<7.0.0,>=6.0.0",
+    "pyfakefs<6.0.0,>=5.0.0",
+    "pytest-mock<4.0.0,>=3.10.0",
+]
+
+[tool.pdm.build]
+includes = [
+    "src/stsmfa",
+]
+
+[project]
+authors = [
+    {name = "Bruno Alla", email = "alla.brunoo@gmail.com"},
+]
+license = {text = "MIT"}
+requires-python = "<4.0,>=3.9"
+dependencies = [
+    "boto3<2.0,>=1.26",
+    "typer<1.0.0,>=0.15.0",
+    "rich>=10.0",
+]
+name = "stsmfa-cli"
+version = "1.4.6"
+description = "A small CLI to help with creating AWS profile for MFA protected sessions"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/browniebroke/stsmfa-cli/issues"
+Changelog = "https://github.com/browniebroke/stsmfa-cli/blob/main/CHANGELOG.md"
+repository = "https://github.com/browniebroke/stsmfa-cli"
+
+[project.scripts]
+stsmfa = "stsmfa.cli:app"
+awsmfa = "stsmfa.cli:app"
