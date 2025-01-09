@@ -26,7 +26,7 @@ class TestRun:
         with pytest.raises(Exit):
             run(token="123456", profile="dummy", mfa_profile="")  # noqa: S106
         rich_print.assert_called_once_with(
-            "[red]Profile dummy not found in credentials file " f"{CREDS_PATH}[/red]"
+            f"[red]Profile dummy not found in credentials file {CREDS_PATH}[/red]"
         )
 
     def test_mfa_device_missing(self, fs, rich_print):
