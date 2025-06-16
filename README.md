@@ -1,4 +1,4 @@
-# STS MFA CLI
+# AWS MFA CLI
 
 <p align="center">
   <a href="https://github.com/browniebroke/stsmfa-cli/actions/workflows/test.yml?query=branch%3Amain">
@@ -24,7 +24,7 @@
 
 ---
 
-Creating temporary profiles for multi-factor auth (MFA) protected accounts using AWS STS is too hard. This is a small CLI that helps with that.
+Creating temporary profiles for multi-factor auth (MFA) protected accounts using AWS STS is too hard. This is a small CLI written in Go that helps with that.
 
 ## Installation
 
@@ -37,7 +37,6 @@ brew install browniebroke/tap/stsmfa-cli
 ### Via Go Install
 
 ```bash
-go install github.com/browniebroke/stsmfa-cli/cmd/stsmfa@latest
 go install github.com/browniebroke/stsmfa-cli/cmd/awsmfa@latest
 ```
 
@@ -47,7 +46,7 @@ Download the latest binary from the [releases page](https://github.com/browniebr
 
 ## Usage
 
-The CLI is a simple command `stsmfa` (or `awsmfa` for compatibility) that creates a profile for a temporary session protected by MFA.
+The CLI is a simple command `awsmfa` that creates a profile for a temporary session protected by MFA.
 
 Assuming your `~/.aws/credentials` file looks like this:
 
@@ -61,8 +60,6 @@ mfa_serial = arn:aws:iam::123456789010:mfa/first.last
 When running, for example:
 
 ```bash
-# Using either command name
-stsmfa 123456 --profile my-profile-name
 awsmfa 123456 --profile my-profile-name
 ```
 

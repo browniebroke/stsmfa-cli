@@ -63,11 +63,9 @@ make clean
 
 ```bash
 # After building
-./bin/stsmfa 123456 --profile my-profile
-./bin/awsmfa 123456 --profile my-profile  # Alternative command name
+./bin/awsmfa 123456 --profile my-profile
 
 # After local installation
-stsmfa 123456 --profile my-profile
 awsmfa 123456 --profile my-profile
 ```
 
@@ -75,8 +73,7 @@ awsmfa 123456 --profile my-profile
 
 ### Core Components
 
-- **`cmd/stsmfa/main.go`**: Main stsmfa binary using Cobra framework
-- **`cmd/awsmfa/main.go`**: Alternative awsmfa binary (identical functionality)
+- **`cmd/awsmfa/main.go`**: Main awsmfa binary using Cobra framework
   - Single command handling the entire MFA workflow
   - AWS credentials file parsing with go-ini
   - AWS SDK for Go v2 STS client integration for session token generation
@@ -98,7 +95,7 @@ awsmfa 123456 --profile my-profile
 
 ### Entry Points
 
-Both `stsmfa` and `awsmfa` are separate binaries built from their respective main.go files in the cmd/ directory.
+The `awsmfa` binary is built from the main.go file in the cmd/awsmfa/ directory.
 
 ## Development Workflow
 
