@@ -24,7 +24,7 @@ Look through the GitHub issues for features. Anything tagged with "enhancement" 
 
 ### Write Documentation
 
-STS MFA CLI could always use more documentation, whether as part of the official STS MFA CLI docs, in docstrings, or even on the web in blog posts, articles, and such.
+AWS MFA CLI could always use more documentation, whether as part of the official AWS MFA CLI docs, in code comments, or even on the web in blog posts, articles, and such.
 
 ### Submit Feedback
 
@@ -46,10 +46,10 @@ Ready to contribute? Here's how to set yourself up for local development.
    $ git clone git@github.com:your_name_here/stsmfa-cli.git
    ```
 
-3. Install the project dependencies with [uv](https://docs.astral.sh/uv/):
+3. Install the project dependencies:
 
    ```shell
-   $ uv sync
+   $ go mod tidy
    ```
 
 4. Create a branch for local development:
@@ -63,7 +63,7 @@ Ready to contribute? Here's how to set yourself up for local development.
 5. When you're done making changes, check that your changes pass our tests:
 
    ```shell
-   $ uv run pytest
+   $ make test
    ```
 
 6. Linting is done through [pre-commit](https://pre-commit.com). Provided you have the tool installed globally, you can run them all as one-off:
@@ -104,14 +104,14 @@ We like to have the pull request open as soon as possible, that's a great place 
 
 ## Tips
 
-To run a subset of tests:
+To run tests with coverage:
 
 ```shell
-$ pytest tests
+$ go test -v -cover ./...
 ```
 
 ## Making a new release
 
-The deployment should be automated and can be triggered from the Semantic Release workflow in GitHub. The next version will be based on [the commit logs](https://python-semantic-release.readthedocs.io/en/latest/commit-log-parsing.html#commit-log-parsing). This is done by [python-semantic-release](https://python-semantic-release.readthedocs.io/en/latest/index.html) via a GitHub action.
+The deployment should be automated and can be triggered by pushing a new git tag. The release will be built using GoReleaser and published to GitHub releases with cross-platform binaries. Homebrew packages will also be automatically updated.
 
 [gh-issues]: https://github.com/browniebroke/stsmfa-cli/issues

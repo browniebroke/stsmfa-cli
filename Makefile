@@ -24,6 +24,31 @@ clean:
 test:
 	go test -v ./...
 
+# Run tests with coverage
+test-coverage:
+	go test -v -cover ./...
+
+# Run tests and generate coverage report
+coverage:
+	go test -coverprofile=coverage.out ./...
+	go tool cover -html=coverage.out -o coverage.html
+
+# Format code
+fmt:
+	go fmt ./...
+
+# Vet code
+vet:
+	go vet ./...
+
+# Lint code (requires golangci-lint)
+lint:
+	golangci-lint run
+
 # Install locally
 install:
 	go install $(LDFLAGS) ./cmd/awsmfa
+
+# Run pre-commit hooks
+pre-commit:
+	pre-commit run --all-files
