@@ -24,30 +24,14 @@
 
 ---
 
-Creating temporary profiles for multi-factor auth (MFA) protected accounts using AWS STS is too hard. This is a small CLI written in Go that helps with that.
-
-## Features
-
-- ✅ Same CLI API as the original Python version
-- ✅ Reads AWS credentials from `~/.aws/credentials`
-- ✅ Validates MFA configuration
-- ✅ Calls AWS STS with MFA token
-- ✅ Writes temporary credentials to a new profile
-- ✅ Colored terminal output
-- ✅ Cross-platform builds (Linux, macOS, Windows, ARM64)
-- ✅ Single binary distribution
-- ✅ Homebrew support
+Creating temporary profiles for multi-factor auth (MFA) protected accounts using AWS STS is too hard. This is a small CLI that helps with that.
 
 ## Installation
 
 ### Via Homebrew (Recommended)
 
 ```bash
-# Add the tap (once)
-brew tap browniebroke/tap
-
-# Install the tool
-brew install stsmfa-cli
+brew install browniebroke/tap/stsmfa-cli
 ```
 
 ### Via Go Install
