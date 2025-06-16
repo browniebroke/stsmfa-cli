@@ -1,0 +1,17 @@
+[package]
+name = "stsmfa"
+version = "0.1.0"
+edition = "2021"
+description = "A CLI tool for AWS STS MFA authentication"
+authors = ["Your Name <your.email@example.com>"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+aws-config = "1.1"
+aws-sdk-sts = "1.1"
+tokio = { version = "1.36", features = ["full"] }
+anyhow = "1.0"
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.0" 
