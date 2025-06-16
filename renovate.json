@@ -1,3 +1,12 @@
 {
-  "extends": ["github>browniebroke/renovate-configs:python"]
+  "extends": ["config:base"],
+  "gomod": {
+    "enabled": true
+  },
+  "github-actions": {
+    "enabled": true
+  },
+  "pre-commit": {
+    "enabled": true
+  }
 }

@@ -1,8 +1,25 @@
+image: gitpod/workspace-go
+
 tasks:
-  - command: |
-      pip install uv
-      PIP_USER=false uv sync
-  - command: |
+  - name: Setup
+    init: |
+      # Install dependencies
+      go mod tidy
+
+      # Install pre-commit
       pip install pre-commit
       pre-commit install
-      PIP_USER=false pre-commit install-hooks
+      pre-commit install-hooks
+    command: |
+      # Build the project
+      make build
+
+      # Show help
+      ./bin/awsmfa --help
+
+vscode:
+  extensions:
+    - golang.go
+    - ms-vscode.vscode-json
+    - redhat.vscode-yaml
+    - ms-vscode.makefile-tools
