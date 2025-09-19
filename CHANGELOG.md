@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.7.0 (2025-09-19)
+
+### Features
+
+- Add support for python 3.14 ([`d456d51`](https://github.com/browniebroke/stsmfa-cli/commit/d456d51165f486e23fb9f66ed0b3b551367daa2a))
+
 ## v1.6.0 (2025-09-19)
 
 ### Features
