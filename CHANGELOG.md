@@ -1,40 +1,46 @@
 # Changelog
 
+## v1.6.0 (2025-09-19)
+
+### Features
+
+- Drop support for python 3.9 ([`d4c22f5`](https://github.com/browniebroke/stsmfa-cli/commit/d4c22f587e14ca45cc5fff5397647923b3588923))
+
 ## v1.5.0 (2024-12-18)
 
 ### Features
 
-- Migrate packaging to uv (#880) ([`906a9e3`](https://github.com/browniebroke/stsmfa-cli/commit/906a9e3e870da1791025c09cf501a4665b13177f))
+- Migrate packaging to uv ([`906a9e3`](https://github.com/browniebroke/stsmfa-cli/commit/906a9e3e870da1791025c09cf501a4665b13177f))
 
 ## v1.4.6 (2024-12-04)
 
 ### Bug fixes
 
-- Update dependency typer to v0.15.1 (#861) ([`5f5e14f`](https://github.com/browniebroke/stsmfa-cli/commit/5f5e14f6cfb0481652971e2352ed9a7ea3e27a7d))
+- Update dependency typer to v0.15.1 ([`5f5e14f`](https://github.com/browniebroke/stsmfa-cli/commit/5f5e14f6cfb0481652971e2352ed9a7ea3e27a7d))
 
 ## v1.4.5 (2024-12-03)
 
 ### Bug fixes
 
-- Update dependency typer to ^0.15.0 (#858) ([`f8e986a`](https://github.com/browniebroke/stsmfa-cli/commit/f8e986a69cb2e27389a42847bedde285e43bbcaa))
+- Update dependency typer to ^0.15.0 ([`f8e986a`](https://github.com/browniebroke/stsmfa-cli/commit/f8e986a69cb2e27389a42847bedde285e43bbcaa))
 
 ## v1.4.4 (2024-11-29)
 
 ### Bug fixes
 
-- Update dependency typer to ^0.14.0 (#849) ([`5821451`](https://github.com/browniebroke/stsmfa-cli/commit/5821451653cb7ca49d966ffca8df5cafa47e48f5))
+- Update dependency typer to ^0.14.0 ([`5821451`](https://github.com/browniebroke/stsmfa-cli/commit/5821451653cb7ca49d966ffca8df5cafa47e48f5))
 
 ## v1.4.3 (2024-11-19)
 
 ### Bug fixes
 
-- Update dependency typer to v0.13.1 (#839) ([`058705d`](https://github.com/browniebroke/stsmfa-cli/commit/058705d4b2a226b19ae07e1b3ca4434c55894586))
+- Update dependency typer to v0.13.1 ([`058705d`](https://github.com/browniebroke/stsmfa-cli/commit/058705d4b2a226b19ae07e1b3ca4434c55894586))
 
 ## v1.4.2 (2024-11-08)
 
 ### Bug fixes
 
-- Update dependency typer to ^0.13.0 (#817) ([`708eb1f`](https://github.com/browniebroke/stsmfa-cli/commit/708eb1f3213df9a33ca8378acd7a9ded91ae2acb))
+- Update dependency typer to ^0.13.0 ([`708eb1f`](https://github.com/browniebroke/stsmfa-cli/commit/708eb1f3213df9a33ca8378acd7a9ded91ae2acb))
 
 ## v1.4.1 (2024-11-02)
 
@@ -46,7 +52,7 @@
 
 ### Features
 
-- Drop support for python 3.8 (#808) ([`c52f7e1`](https://github.com/browniebroke/stsmfa-cli/commit/c52f7e1ee6070f35a12416ed2f795a1c80fae6f2))
+- Drop support for python 3.8 ([`c52f7e1`](https://github.com/browniebroke/stsmfa-cli/commit/c52f7e1ee6070f35a12416ed2f795a1c80fae6f2))
 
 ## v1.3.7 (2024-10-22)
 
@@ -94,7 +100,7 @@
 
 ### Features
 
-- Attest build provenance (#692) ([`680b6ea`](https://github.com/browniebroke/stsmfa-cli/commit/680b6eaf122f5b3e6f1790d8b02b4ccfc05634a4))
+- Attest build provenance ([`680b6ea`](https://github.com/browniebroke/stsmfa-cli/commit/680b6eaf122f5b3e6f1790d8b02b4ccfc05634a4))
 
 ## v1.2.0 (2024-08-07)
 
@@ -166,7 +172,7 @@
 
 ### Features
 
-- Add official support for python 3.12 (#217) ([`29bd64c`](https://github.com/browniebroke/stsmfa-cli/commit/29bd64c3626266acb4535f2c5b5108181e606433))
+- Add official support for python 3.12 ([`29bd64c`](https://github.com/browniebroke/stsmfa-cli/commit/29bd64c3626266acb4535f2c5b5108181e606433))
 
 ## v1.0.0 (2023-06-27)
 
@@ -184,7 +190,7 @@
 
 ### Bug fixes
 
-- Update dependency boto3 to v1.26.104 (#60) ([`865333d`](https://github.com/browniebroke/stsmfa-cli/commit/865333dfbadc988f882b45a1be57cb9aefd13cc6))
+- Update dependency boto3 to v1.26.104 ([`865333d`](https://github.com/browniebroke/stsmfa-cli/commit/865333dfbadc988f882b45a1be57cb9aefd13cc6))
 
 ## v0.1.12 (2023-03-30)
 
@@ -226,7 +232,7 @@
 
 ### Bug fixes
 
-- Update dependency boto3 to v1.26.95 (#48) ([`f132c2a`](https://github.com/browniebroke/stsmfa-cli/commit/f132c2a71bbf7f2439648c3cf5c9f1934951928d))
+- Update dependency boto3 to v1.26.95 ([`f132c2a`](https://github.com/browniebroke/stsmfa-cli/commit/f132c2a71bbf7f2439648c3cf5c9f1934951928d))
 
 ## v0.1.5 (2023-03-17)
 
@@ -248,14 +254,16 @@
 
 ### Documentation
 
-- Update link for ci badge (#29) ([`36a3c3c`](https://github.com/browniebroke/stsmfa-cli/commit/36a3c3caef693b8eb180290fc829eae12526a267))
-- Update badge for ci workflow (#28) ([`1c7a19a`](https://github.com/browniebroke/stsmfa-cli/commit/1c7a19a462dc5a9cbdab0032f193a9ae6704adf3))
+- Update link for ci badge ([`36a3c3c`](https://github.com/browniebroke/stsmfa-cli/commit/36a3c3caef693b8eb180290fc829eae12526a267))
+- Update badge for ci workflow ([`1c7a19a`](https://github.com/browniebroke/stsmfa-cli/commit/1c7a19a462dc5a9cbdab0032f193a9ae6704adf3))
 
 ## v0.1.2 (2023-01-10)
 
 ### Bug fixes
 
-- Update dependency rich to v13 (#22) ([`366d6df`](https://github.com/browniebroke/stsmfa-cli/commit/366d6df04c4d435833f3889e8833ff8997b950b2))
+- Update dependency rich to v13 ([`366d6df`](https://github.com/browniebroke/stsmfa-cli/commit/366d6df04c4d435833f3889e8833ff8997b950b2))
+- Update dependency rich to v13 ([`366d6df`](https://github.com/browniebroke/stsmfa-cli/commit/366d6df04c4d435833f3889e8833ff8997b950b2))
+- Update versions ([`366d6df`](https://github.com/browniebroke/stsmfa-cli/commit/366d6df04c4d435833f3889e8833ff8997b950b2))
 
 ### Documentation
 
@@ -275,7 +283,7 @@
 
 ### Features
 
-- Initial version of the cli (#4) ([`d10c09e`](https://github.com/browniebroke/stsmfa-cli/commit/d10c09ede5ede58885e3898c9276f0951ff9344a))
+- Initial version of the cli ([`d10c09e`](https://github.com/browniebroke/stsmfa-cli/commit/d10c09ede5ede58885e3898c9276f0951ff9344a))
 
 ### Documentation
 
