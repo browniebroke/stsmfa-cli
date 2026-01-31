@@ -82,12 +82,6 @@ max_supported_python = "3.14"
 addopts = "-v -Wdefault --cov=stsmfa --cov-report=term-missing:skip-covered"
 pythonpath = [ "src" ]
 
-[tool.coverage.run]
-branch = true
-omit = [
-  "src/stsmfa/__maIn__.py",
-]
-
 [tool.coverage.report]
 exclude_lines = [
   "pragma: no cover",
@@ -95,6 +89,12 @@ exclude_lines = [
   "if TYPE_CHECKING",
   "raise NotImplementedError",
   'if __name__ == "__main__":',
+]
+
+[tool.coverage.run]
+branch = true
+omit = [
+  "src/stsmfa/__maIn__.py",
 ]
 
 [tool.mypy]
@@ -127,6 +127,12 @@ git add uv.lock
 uv build
 """
 
+[tool.semantic_release.branches.main]
+match = "main"
+
+[tool.semantic_release.branches.noop]
+match = "(?!main$)"
+prerelease = true
 [tool.semantic_release.changelog]
 exclude_commit_patterns = [
   "chore.*",
@@ -136,10 +142,3 @@ exclude_commit_patterns = [
 
 [tool.semantic_release.changelog.environment]
 keep_trailing_newline = true
-
-[tool.semantic_release.branches.main]
-match = "main"
-
-[tool.semantic_release.branches.noop]
-match = "(?!main$)"
-prerelease = true
