@@ -21,7 +21,6 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
   "Topic :: Software Development :: Libraries",
 ]
-
 dependencies = [
   "boto3>=1.26,<2",
   "rich>=10",
@@ -43,7 +42,6 @@ dev = [
 
 [tool.ruff]
 line-length = 88
-
 lint.select = [
   "B",   # flake8-bugbear
   "C4",  # flake8-comprehensions
@@ -78,22 +76,20 @@ lint.isort.known-first-party = [ "stsmfa", "tests" ]
 [tool.pyproject-fmt]
 max_supported_python = "3.14"
 
-[tool.pytest.ini_options]
-addopts = "-v -Wdefault --cov=stsmfa --cov-report=term-missing:skip-covered"
-pythonpath = [ "src" ]
+[tool.pytest]
+ini_options.addopts = "-v -Wdefault --cov=stsmfa --cov-report=term-missing:skip-covered"
+ini_options.pythonpath = [ "src" ]
 
-[tool.coverage.report]
-exclude_lines = [
+[tool.coverage]
+report.exclude_lines = [
   "pragma: no cover",
   "@overload",
   "if TYPE_CHECKING",
   "raise NotImplementedError",
   'if __name__ == "__main__":',
 ]
-
-[tool.coverage.run]
-branch = true
-omit = [
+run.branch = true
+run.omit = [
   "src/stsmfa/__maIn__.py",
 ]
 
@@ -108,12 +104,9 @@ show_error_codes = true
 warn_unreachable = true
 warn_unused_ignores = true
 exclude = [
-  'setup.py',
+  "setup.py",
 ]
-
-[[tool.mypy.overrides]]
-module = "tests.*"
-allow_untyped_defs = true
+overrides = [ { module = "tests.*", allow_untyped_defs = true } ]
 
 [tool.semantic_release]
 version_toml = [ "pyproject.toml:project.version" ]
@@ -126,19 +119,12 @@ uv lock
 git add uv.lock
 uv build
 """
-
-[tool.semantic_release.branches.main]
-match = "main"
-
-[tool.semantic_release.branches.noop]
-match = "(?!main$)"
-prerelease = true
-[tool.semantic_release.changelog]
-exclude_commit_patterns = [
+branches.main.match = "main"
+branches.noop.match = "(?!main$)"
+branches.noop.prerelease = true
+changelog.exclude_commit_patterns = [
   "chore.*",
   "ci.*",
   "Merge pull request .*",
 ]
-
-[tool.semantic_release.changelog.environment]
-keep_trailing_newline = true
+changelog.environment.keep_trailing_newline = true
