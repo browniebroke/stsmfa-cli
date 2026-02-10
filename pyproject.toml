@@ -83,7 +83,7 @@ ini_options.pythonpath = [ "src" ]
 [tool.coverage]
 run.branch = true
 run.omit = [
-  "src/stsmfa/__maIn__.py",
+  "src/stsmfa/__main__.py",
 ]
 report.exclude_lines = [
   "@overload",
