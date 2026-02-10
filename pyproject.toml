@@ -81,16 +81,16 @@ ini_options.addopts = "-v -Wdefault --cov=stsmfa --cov-report=term-missing:skip-
 ini_options.pythonpath = [ "src" ]
 
 [tool.coverage]
-report.exclude_lines = [
-  "pragma: no cover",
-  "@overload",
-  "if TYPE_CHECKING",
-  "raise NotImplementedError",
-  'if __name__ == "__main__":',
-]
 run.branch = true
 run.omit = [
-  "src/stsmfa/__maIn__.py",
+  "src/stsmfa/__main__.py",
+]
+report.exclude_lines = [
+  "@overload",
+  'if __name__ == "__main__":',
+  "if TYPE_CHECKING",
+  "pragma: no cover",
+  "raise NotImplementedError",
 ]
 
 [tool.mypy]
