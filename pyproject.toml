@@ -77,7 +77,8 @@ lint.isort.known-first-party = [ "stsmfa", "tests" ]
 max_supported_python = "3.14"
 
 [tool.pytest]
-addopts = "-v -Wdefault --cov=stsmfa --cov-report=term-missing:skip-covered"
+minversion = "9.0"
+addopts = ["-v", "-Wdefault", "--cov=stsmfa", "--cov-report=term-missing:skip-covered"]
 pythonpath = [ "src" ]
 
 [tool.coverage]
