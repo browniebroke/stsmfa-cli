@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.7.1 (2026-02-26)
+
+### Bug fixes
+
+- Migrate from actions/attest-build-provenance to actions/attest ([`ee39696`](https://github.com/browniebroke/stsmfa-cli/commit/ee39696f39c7de7caf9b2b2394929c660e02381a))
+
 ## v1.7.0 (2025-09-19)
 
 ### Features

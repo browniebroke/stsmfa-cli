@@ -366,7 +366,7 @@ wheels = [
 
 [[package]]
 name = "stsmfa-cli"
-version = "1.7.0"
+version = "1.7.1"
 source = { virtual = "." }
 dependencies = [
     { name = "boto3" },

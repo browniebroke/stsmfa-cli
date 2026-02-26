@@ -1,6 +1,6 @@
 [project]
 name = "stsmfa-cli"
-version = "1.7.0"
+version = "1.7.1"
 description = "A small CLI to help with creating AWS profile for MFA protected sessions"
 readme = "README.md"
 license = { text = "MIT" }
