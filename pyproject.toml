@@ -38,6 +38,7 @@ dev = [
   "pytest>=9,<10",
   "pytest-cov>=7,<8",
   "pytest-mock>=3.10,<4",
+  "ty==0.0.31",
 ]
 
 [tool.ruff]
@@ -76,20 +77,8 @@ lint.isort.known-first-party = [ "stsmfa", "tests" ]
 [tool.pyproject-fmt]
 max_supported_python = "3.14"
 
-[tool.mypy]
-check_untyped_defs = true
-disallow_any_generics = true
-disallow_incomplete_defs = true
-disallow_untyped_defs = true
-mypy_path = "src/"
-no_implicit_optional = true
-show_error_codes = true
-warn_unreachable = true
-warn_unused_ignores = true
-exclude = [
-  "setup.py",
-]
-overrides = [ { module = "tests.*", allow_untyped_defs = true } ]
+[tool.ty]
+terminal.error-on-warning = true
 
 [tool.pytest]
 minversion = "9.0"
