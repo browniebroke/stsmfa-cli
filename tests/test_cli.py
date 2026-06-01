@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import pytest
-from click.exceptions import Exit
+from typer import Exit
 
 from stsmfa.cli import run
 
