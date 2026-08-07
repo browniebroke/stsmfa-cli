@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.8.0 (2026-08-07)
+
+### Features
+
+- Add support for python 3.15 ([`a2b0958`](https://github.com/browniebroke/stsmfa-cli/commit/a2b0958faf81513e2b70c5d3564031bb5b415b9c))
+
 ## v1.7.1 (2026-02-26)
 
 ### Bug fixes
