@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.0 (2026-11-07)
+
+### Features
+
+- Drop support for python 3.10 ([`c17d291`](https://github.com/browniebroke/stsmfa-cli/commit/c17d2917d31dcbc94e1852f75c8f7ab880e25754))
+
 ## v1.8.0 (2026-08-07)
 
 ### Features
